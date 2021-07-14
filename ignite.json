@@ -17,17 +17,5 @@
                 ]
             }
         ]
-    },
-    "storage": {
-        "files": [
-            {
-                "overwrite": true,
-                "path": "/etc/NetworkManager/system-connections/ens7.nmconnection",
-                "contents": {
-                    "source": "data:,%5Bconnection%5D%0Atype%3Dethernet%0Ainterface-name%3Dens7%0A%0A%5Bipv4%5D%0Amethod%3Dmanual%0Aaddresses%3D10.0.0.104%2F16%0A"
-                },
-                "mode": 384
-            }
-        ]
     }
 }
