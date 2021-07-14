@@ -1,13 +1,14 @@
 {
     "ignition": {
-        "version": "3.0.0"
+        "version": "3.2.0"
     },
     "passwd": {
         "users": [
             {
                 "groups": [
                     "sudo",
-                    "docker"
+                    "docker",
+                    "wheel"
                 ],
                 "name": "core",
                 "sshAuthorizedKeys": [
@@ -15,6 +16,25 @@
                     "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCuPH49mXpPHM6PZwboQGnUArTTUxZ09PV6umuChfCpsJKIfzAGUvXsJNAtw3jqj4TLiBskjFd8DcXvnLAkBH0bhb/oL5CS07OzbfJ8Vck5J8NwgEG7SpMEMLQHqx1JU+MigGwa6YYGn/xeEsgyLXBcLyUFq+X2p8z1rchOy0qHSEU061V7SyWo25X7Iqup5OO0deW4VFxxXexNr0JZJrLEJeEvM8GGkox+GvCBBNbYN1y5+QolbIS08WYseObKlLW/Nwh2aN2Ly3+LO6XbJzcKCEdarawtyqEOZzt/K31OrDqk1ALnYP3TUyMLvI44qZZUu15TJYDjHepmqva+AC2rKtN7thOcpSxLCb7XzqKESGDc+OJIFafAweaiMT9muWYT4r7gK2RUshwQS3oS1qrLkEDwYalLVLEc5icsr/PA5BnRsfziFn5p5R0XBPjhZTGaQfVRpHe9ClBI8sbjOyQEBuOnU6EjLNgocLn5XCN65ELpjY+p6jk1dVmcrEqbjgM= martino@DESKTOP-J6190C2",
                     "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC1eeXNSOVqn8uZzyInEmn4NT40P6mBcumUGvfIXLfmCcI9tBruZJs4s2hkc0wys6L0Y+E+LBDNDMslsvtEa5BB0rNlbA7pec9VpPzPCQsDLjADCKzps0aIysz3yT6TThVyo0vm3c/LVOk1JM0RMOhfabdoIYzVbM2B/p3FwONPol8jYbj1Z8Tzi+3jqC0dQlY0J2nWyFxKdS6BiJjGQh/Ncsq9EgTDDCLMJfJc+Cqn1S7L6jvJQ8dnG6bu9pGqcyyfgdjvqK2c3X+eSFG6yWk/+/leQSq7x2Tm7mnuwTeltC6GYA6LRsZ0WSWM+owwGBGdEM0AxGEmCnfSdGxVgSjCe2A69OgLOGRBWAj+4+7rnOAKStAEMeav4g8XKvWHs0q0P0eXMO7EN/ZZZYOID3TQsltXHqFSRfyGe3Fh3yfIXgPCClsF6PtAmRica4U5bDl2UkoxIAco72GiMQsJLdUPGsp+p8tqcdPmjfGnZj4aB6LI5N7v+cmoIM2EuGGPvw0= martino@DESKTOP-RB5F8GA"
                 ]
+            }
+        ]
+    },
+    "storage": {
+        "files": [
+            {
+                "overwrite": true,
+                "path": "/etc/hostname",
+                "contents": {
+                    "source": "data:,master"
+                }
+            },
+            {
+                "overwrite": true,
+                "path": "/etc/NetworkManager/system-connections/ens7.nmconnection",
+                "contents": {
+                    "source": "data:,%5Bconnection%5D%0Atype%3Dethernet%0Ainterface-name%3Dens7%0A%0A%5Bipv4%5D%0Amethod%3Dmanual%0Aaddresses%3D10.0.0.104%2F16%0A"
+                },
+                "mode": 384
             }
         ]
     }
