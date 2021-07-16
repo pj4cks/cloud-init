@@ -21,3 +21,5 @@ k3os:
   - 1.us.pool.ntp.org
   k3s_args:
   - agent
+  labels:
+    node-role.kubernetes.io/worker: worker
