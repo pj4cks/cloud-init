@@ -1,10 +1,11 @@
 rancher:
+hostname: r1
 network:
 interfaces:
 eth0:
 address:
 gateway: 
-dhcp: true
+dhcp: false
 dns:
 nameservers:
 - 8.8.8.8
