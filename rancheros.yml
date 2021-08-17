@@ -5,7 +5,7 @@ interfaces:
 eth0:
 address:
 gateway: 
-dhcp: false
+dhcp: true
 dns:
 nameservers:
 - 8.8.8.8
