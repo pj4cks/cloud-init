@@ -1,0 +1,14 @@
+rancher:
+network:
+interfaces:
+eth0:
+address: 192.168.1.202/24
+gateway: 192.168.1.1
+dhcp: false
+dns:
+nameservers:
+- 8.8.8.8
+- 1.1.1.3
+ 
+ssh_authorized_keys:
+- ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCo6gaY+FFyKx9hRYOIutiTavvOBCNvP8Ucg66rFSnXJTCAKdRHGMUehC19sIAnXa+zsMnaR2UhYYaqChRKY61JTI2JpgnVU9itVYL4cneZURNWMlMvx2gH9yRzsftbEXBIwvw8Sz+PMb8/ugli7JxsftOFIYIEWw2FbtO69iGlZlfGa0tLENwg2bYww5W4M0wmXweOVk2/mvHGx4cb0oDEbmjRRiTsDtOqj6YDeDTVtk1rtNcvMKz/6RjRgOhBW8H10WQhvSw0S2jT1zJTGEogYXeW2zQN/mRYroh7Q2PvZiMUpESD1EiBFTclmWBRPGQP+nLmEn0FqkNnQ6OTUIOohdph8vSNXUa2FtexXJiMqVdyVONOmqRKzBpw306jB7Bk95pVnoyrNjdloe1hSLd9jeUgBcQUV4leIpUisDgkhNGzz6/unNrdWHx71MXjfqxz73qNz9LcLsHxM8BQIrkW+UWUKUfwEnxUWoLOihpBZTynx0rhiXp6w+7Emlpjr2s= pjech@DESKTOP-J9KQHJF
