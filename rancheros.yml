@@ -2,9 +2,9 @@ rancher:
 network:
 interfaces:
 eth0:
-address:
-gateway: 
-dhcp: true
+address: 192.168.1.202/24
+gateway: 192.168.1.1
+dhcp: false
 dns:
 nameservers:
 - 8.8.8.8
