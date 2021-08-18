@@ -1,5 +1,4 @@
 rancher:
-hostname: r1
 network:
 interfaces:
 eth0:
