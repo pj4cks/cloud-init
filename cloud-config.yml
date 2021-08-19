@@ -7,7 +7,7 @@ rancher:
         - 1.1.1.1
         - 1.0.0.1
     interfaces:
-      eth1:
+      eth0:
         dhcp: false
         address: 192.168.1.202/24
         gateway: 192.168.1.1
