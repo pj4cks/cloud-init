@@ -1,5 +1,4 @@
 #cloud-config
-
 hostname: rancher1
 rancher:
   network:
